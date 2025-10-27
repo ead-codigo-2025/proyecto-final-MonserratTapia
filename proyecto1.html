@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Proyecto | Proyecto Uniforme</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        /* estilo hero */
+        .project-hero-overlay {
+            height: 250px; 
+            background-image: url('images/img3.jpg'); 
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            margin-bottom: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-hero-overlay::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4); 
+        }
+
+        .project-hero-content {
+            position: relative;
+            z-index: 10;
+            color: white;
+            padding: 0 15px;
+        }
+
+        /* estilos sección texto y imagen*/
+        .content-section {
+            margin-bottom: 60px;
+            align-items: stretch; 
+            --bs-gutter-x: 5rem; 
+        }
+        
+        @media (max-width: 767.98px) {
+            .content-section {
+                --bs-gutter-x: 1.5rem; 
+            }
+        }
+        
+        /* Contenedor de la imagen */
+        .content-image-wrapper {
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            height: 100%; 
+        }
+        
+        .content-image-wrapper img {
+            width: 100%;
+            height: 100%; 
+            object-fit: cover;
+        }
+        
+        .text-content-aligned {
+            padding-top: 0; 
+            margin-top: 0;
+        }
+        .text-content-aligned p {
+            margin-top: 0 !important; 
+        }
+
+        /* carrusel*/
+        .narrow-content-container {
+             padding: 0; 
+        }
+        .square-carousel-item img {
+            width: 100%;
+            height: 400px; 
+            object-fit: cover;
+        }
+        
+        /* Video de youtube*/
+        .video-container {
+            overflow: hidden;
+            padding-top: 56.25%; 
+            position: relative;
+            margin-bottom: 50px;
+        }
+
+        .video-container iframe {
+            border: 0;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header-top bg-light sticky-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navigation">
+                    <div class="container-fluid">
+                        <a class="navbar-brand me-auto ms-auto" href="index.html">
+                            <h4 class="mb-0">Portafolio Monserrat Tapia</h4>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu1" aria-controls="menu1" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                       <div class="collapse navbar-collapse" id="menu1">
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="sobremi.html">Sobre mí</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="casiopea.html">Casiopea</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="dibujos.html">Dibujos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+    </ul>
+</div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="project-hero-overlay">
+    <div class="project-hero-content">
+    </div>
+</div>
+<section class="section-padding pt-0">
+    <div class="container">
+        
+        <div class="row content-section justify-content-center">
+            
+            <div class="col-md-5 mb-4 mb-md-0">
+                <div class="content-image-wrapper">
+                    <img src="images/img20.png" alt="Concepto principal">
+                </div>
+            </div>
+            
+            <div class="col-md-5 text-content-aligned">
+               <p class="lead fw-bold">Meropi: una tipografía que nace de otra</p>
+                <p>Meropi está basada en la tipografía Foundational, donde en el intento de recrear su escritura a mano nace una nueva configuración de su forma y trazo, creando así detalles más redondos y un contraste medio entre letras. </p>
+                <p>Su construcción principal yace en las formas redondas y puntiagudas de su serif tanto arriba como abajo del cuerpo tipográfico, en donde cuenta con diferentes terminaciones dependiendo del grosor y de la orientación de la letra. </p>
+                <p>Gracias a esto, se produce una letra fina o gruesa dependiendo si se usa como cuerpo o como display en los textos.</p>
+            </div>
+        </div>
+
+        <div class="row content-section justify-content-center">
+            
+            <div class="col-md-5 order-md-1 text-content-aligned">
+                <p class="lead fw-bold"> Su diseño y proceso creativo</p>
+                <p>Como base de su creación, se traza por encima de la letra hecha a mano para poder tener sus contornos y formar una guía básica, ajustando valores y tamaños hasta llegar a una construcción consolidada de cada grupo. En este caso, por ejemplo, desde la letra o también provienen la c,e y g para mantener este orden y su ángulo, así como de la b nace la p,d y q,</p>
+                <p>El alfabeto se divide en minúsculas y máyusculas, junto con sus respectivos signos que siguen la misma proporción de la letra.</p>
+                <p>Dependiendo del tipo de letra su serif es diferente, por ejemplo, las letras rectas con el grosor promedio de la letra tienen 2 tipos de remate, uno arriba y uno abajo donde tienen cierta variación, terminando el de la parte baja de manera mas angosta por su grosor.</p>
+            </div>
+            
+            <div class="col-md-5 order-md-2 mb-4 mb-md-0">
+                <div class="content-image-wrapper">
+                    <img src="images/img27.png" alt="Solución propuesta">
+                </div>
+            </div>
+        </div>
+        
+        <div class="row my-5 justify-content-center">
+            <div class="col-12 text-center mb-4">
+                <h2>Galería de Detalles</h2>
+            </div>
+            <div class="col-lg-10 narrow-content-container"> 
+                <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                    
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active square-carousel-item">
+                            <img src="images/img26.jpg" class="d-block w-100" alt="Vista Detalle 1">
+                        </div>
+                        <div class="carousel-item square-carousel-item">
+                            <img src="images/img24.jpg" class="d-block w-100" alt="Vista Detalle 2">
+                        </div>
+                        <div class="carousel-item square-carousel-item">
+                            <img src="images/img3.jpg" class="d-block w-100" alt="Vista Detalle 3">
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<footer class="text-center py-4 bg-light">
+    <div class="container">
+        <p class="mb-0 text-muted">
+            &copy; <span id="currentYear"></span> Monserrat Tapia. Todos los derechos reservados.
+        </p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

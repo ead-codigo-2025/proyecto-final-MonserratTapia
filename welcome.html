@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Bienvenida - Portafolio Monserrat Tapia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    
+    <style>
+        /* estilos */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white; 
+        }
+
+        /* Contenedor principal */
+        .full-width-image-container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: opacity 1s ease-out, transform 1s ease-out; 
+        }
+
+        /* imagen*/
+        .full-width-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; 
+            object-position: center;
+            
+            border: none;
+            box-shadow: none;
+            
+            transition: transform 0.2s ease; 
+        }
+
+        .full-width-image-container img:hover {
+             transform: scale(1.08); 
+        }
+        
+        /* animación*/
+        .full-width-image-container.fade-out {
+            opacity: 0;
+            transform: scale(1.5); 
+        }
+    </style>
+</head>
+<body> <div class="full-width-image-container" onclick="enterPortfolio()">
+        
+        <img src="images/img66.jpg" alt="Bienvenida al Portafolio">
+        
+    </div>
+
+    <script>
+        function enterPortfolio() {
+    
+            const container = document.querySelector('.full-width-image-container');
+            
+            
+            container.classList.add('fade-out');
+            
+            setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 1000); 
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+/* tipografía*/
+
+/* fuente importada*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* color principal*/
+:root {
+    --primary-color: #6ee6a9; 
+    --secondary-color: #23282B; 
+    --font-family-base: 'Poppins', sans-serif;
+    --section-padding: 80px 0; 
+    --text-color-muted: #6c757d;
+}
+
+/* fuente y color*/
+body {
+    font-family: var(--font-family-base);
+    color: var(--secondary-color);
+    line-height: 1.6;
+    
+    /* imagen de fondo */
+
+    background-image: url('https://i.imgur.com/8qthDey.jpeg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center; 
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); 
+    z-index: -1; 
+}
+
+
+/* estilos elementos del boostrap*/
+
+/* Títulos y encabezados */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+/* Color  texto, iconos y énfasis */
+.text-primary, 
+.about-list li i {
+    color: var(--primary-color) !important;
+}
+
+/* enlaces */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+/* Boton contacto*/
+
+.btn-dark:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--secondary-color); 
+}
+
+/* botones Outline */
+.btn-outline-dark {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+}
+
+/* estilo secciones */
+
+.section-padding {
+    padding: var(--section-padding);
+}
+
+/* Navbar  */
+.header-top {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* estilo para los enlaces de la barra */
+.navigation .nav-link {
+    font-weight: 500;
+    padding: 15px 15px;
+    margin: 0 5px;
+    color: var(--secondary-color);
+}
+
+.navigation .nav-link:hover {
+    color: var(--primary-color);
+}
+
+/* estilo enlace activo en la barra */
+.navigation .navbar-nav .nav-item .nav-link.active {
+    color: var(--primary-color) !important; 
+    font-weight: 600; 
+}
+
+/* estilo tarjetas de blog*/
+.card {
+    border: 1px solid #e0e0e0;
+}
+
+.card-img-top {
+    object-fit: cover;
+}
+
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
